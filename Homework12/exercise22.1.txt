@@ -1,0 +1,15 @@
+Method
+------
+I created a blastdb usinb the mkdir blastdb and then dowloaded the files and stores then in the database.
+Unziped the files using gunzip*gz on the command line. Then I change the current dictionary to blastdb by using cd blastdb on the command line. Then processed the unziped files using the following commands 
+makeblastdb -in drosoph-ribosome.fasta -dbtype prot
+makeblastdb -in yeast-ribosome.fasta -dbtype prot
+Then I used the following command to run the blast form the command line. Since both my query and reference file in the blastdb I do not exit the blastdb.
+blastp -db yeast-ribosome.fasta  -query drosoph-ribosome.fasta  -outfmt 5 -out results.xml
+Then using puthon I parse the xml file using Bio.Blast and NCBIXML.
+I create a file handle called results_handle for the xml file. Then I initaite a blast_list list and blast _dict dictionary. Then create a nested for loop to get the alignments for each blast result and then another for loop to get the hsp for each alignment. Initially I set the evalue to < 1e-5 and filter the hsp. Then I create a variable called e_value and stored the hsp.expect of the hsp in it. Then gave an if statement to filter out the reads with e value 0.0 and created a list with query, alignmnet.title, e value and score as the items. Then I created the blast_dict with alignment.title as the key and the corresponding query as the value. I had to do this to get the result with high score and 0.0 evalue for each fruit fly protein. Then I come out of the loop and initiate a new dictionary called max_scores_dict to store the alignment.title as key and high score as the value. To do this I wrote a for loop to get each list from the list blast_list. using indedxing I get the alingnment title and score. I use an if statement to avoid overwiting of the dictionary due to the presence of similar alignment titles. Then I wrote another for loop to get the key and value of the blast_dict with alignment and query as key value pairs and then using the alignment as the key I use max_score_dict.get to get the score. Then print the query and the alignment title with best e value and score.
+
+Strength and weakness
+---------------------
+This code uses too many data structures and too many for loops which makes it a bit hard to read and understand. I think there is a better way to do this.
+ 

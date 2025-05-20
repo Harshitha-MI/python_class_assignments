@@ -1,0 +1,7 @@
+Method
+------
+In the codon table module I inserted one block of try and except in the is_init function. The try statement is to try and get the value of the codon key. The except condition are key error and type error. I have inserted another try and except block in the main code to except an IO error and Index error. When I tried to insert it in the myDNAstuff module the main code showed error as the flow of the program was interrupted. Hence, I put the block in the main program.
+
+Strength and Weakness
+---------------------
+Use of try and except error in this code allows us to deal with mutlipe if conditions to deal with error like index, type and IO error. Although, the use of try and except block in the main program goes against the purspose of using modules and writing a simple code.

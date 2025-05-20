@@ -1,0 +1,11 @@
+Method:
+------
+Model.py: I import sqlobject, sys and os.path modules. Then create a variable dbfile and store the filnemae as small_taxa.db3. Then I connect the database with sqlite. Then create toxonomy and name class with their repective datamembers. In the taxonomy class I created a parent foreginkey and multiplejoins names and children. In the name class I set taxonomy as foreginkey.
+
+Exercise25.1.py: I import the classes from the model file and sys module. Then using sys.argv I get the organism name from the command line.Then store the iterable from the name table for the organism name in hs.The using the taxonomy foreginkey I get the scientific name and taxid from the taxonomy table. Then set the iterable of the taxid from taxonomy  stable and store it in a variable t. Then using the parent foreginkey i get the parent scientific name, rank and taxid. I get the child scientific name, rank and taxid using children multiple join.
+
+Strength and weakness: 
+----------------------
+This code checks for index error as I have inserted a try and except block. It does the job, returns the scientific name of the user provided organism name and also gives the taxonomic lineage of the organism.
+ 
+

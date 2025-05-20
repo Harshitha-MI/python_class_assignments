@@ -1,0 +1,57 @@
+# -*- coding: utf-8 -*-
+"""Main Controller"""
+
+from tg import expose, flash, require, url, lurl
+from tg import request, redirect, tmpl_context
+from tg.i18n import ugettext as _, lazy_ugettext as l_
+from tg.exceptions import HTTPFound
+
+from chopit.lib.base import BaseController
+from chopit.controllers.error import ErrorController
+# from chopit.model.chop import *
+import tw2.forms as twf
+
+__all__ = ['RootController']
+
+
+class SearchForm(twf.Form):
+    class child(twf.TableLayout):
+        query = twf.TextField(label="Protein Sequence")
+        enzyme = twf.SingleSelectField(label="Enzyme",
+                                     options=["Trypsin",
+                                              "Lys_c",
+                                              "Lys_n",
+                                              "Glu_c"],
+                                     prompt_text=None)
+        maxwt = twf.TextField(label="Max Molecular Weight")
+        minwt = twf.TextField(label="Min Molecular Weight")
+        maxlen = twf.TextField(label="Max Length")
+        minlen = twf.TextField(label="Min Length")
+        css_class = 'table'
+        attrs = {'style': 'width: 600px;'}
+
+    action = '/search1'
+    submit = twf.SubmitButton(value="Chop")
+
+
+
+class RootController(BaseController):
+
+    @expose('chopit.templates.index')
+    def index(self):
+        return dict(title = "Chop It!!!!!!!!!!!",
+                    form=SearchForm)
+        
+    @expose('chopit.templates.search')
+    def search(self,query,mode,maxwt,minwt,maxlen,minlen):
+        if enzyme == 'Trypsin':
+            p = trypsin()
+        elif enzyme == 'Lys_c':
+            p = lys_c()
+        elif enzyme == 'Lys_n':
+            p = lys_n()
+        elif enzyme == 'Glu_c':
+            p = glu_c()
+        peptides = p.filter(miss_cleavage,minlen,maxlen,minwt,maxwt)
+        return dict(peptides=peptides,query=query,enzyme=enzyme,
+                    maxwt=maxwt,minwt=minwt,maxlen=maxlen,minlen=minlen)

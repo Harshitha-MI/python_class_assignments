@@ -1,0 +1,30 @@
+Method
+------
+Method 1: I defined a function complement to compute the complement of the
+nucleotides and the reverse_comp function gets the revser complement od the sequence.
+This code takes time to execute as it has to check for all the if conditions but not
+too bad as I used elsif. It it is too wordy.
+
+Method 2: I created a dictionary with bases and their complemt as key and value,
+respectively. Then created an empty list and used for loop and reversed function
+and got the complements from the back of the sequence. I used append method to add
+the values to the list and converted the list into a string using join method.
+This method is better to use with few lines to read and it executes faster.
+
+Method 3: I combined method 1 and method 2. I created an empty list, for loop with
+reversed function and then gave if and elif statements to find the complements. Then
+append the values to the list.This method works faster than method 1 but not as good
+as method 2.
+
+Method 4: In this method I used replace method to get the complement of the bases.
+I alternated with upper and lower case nucleotides as python considers upper and
+lower case of same charecters differently. using append I add the complements to the
+list and convert the list to string using join method. It's not much to read and
+easy to execute but not a good way to write a code. I'm not sure about the execution
+time.
+
+strength and Weakness
+---------------------
+This code can hanlde lower and upper cases. It does not handle charecters other than
+the standard nucleotide bases.
+    

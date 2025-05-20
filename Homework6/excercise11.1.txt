@@ -1,0 +1,7 @@
+Method
+------
+I use module sys to import file from the command line, csv module to read the csv file and statistics to compute mean and standard deviation. I use csv.DictReader create a dictionary with gene name as key and the corresponiding expression values as values. Then I create a list of values under the given gene name and use float function to convert the strinng variable into float and then use mean and stdev to get the mean and standard deviation of the expression values.
+
+Strength and Weakness
+---------------------
+This program is compact and uses various modules available with python reducing the processing time.

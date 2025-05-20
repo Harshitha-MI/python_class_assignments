@@ -1,0 +1,7 @@
+Method
+------
+I use Bio.SeqIO, sys, gzip, statistics and counter modules. I open the RefSeq human proteom file using gzip.open and use counter module to get the dictinary with amino acids as keys and the frequency of each amino acid as the values. Then using Bio.SeqIO.parse in a for loop I iterate through the sequence records. By using .update method, which adds the frequencies and calculate the length of amino acid sequence for the enite human protein. Then I create another dictionary with amino acid as key and relative frequency percentage as values and round it to 4 decimal places. Then get the most frequent and least frequent amino acids in the RefSeq file. I follow the same method with the SwissProt file. Then to compare the two dictionaries I create a dictinary with amnio acids as key and the differnec between the relative frequency percent as values by using for loop and if statement. Then I calculate the mean and standard deviation using the statistics module. Then to check for for bigger difference between frequency I used an i statement which checks if the values in the difference dictionary are greater than the mean and standard deviation of the difference.
+
+Strength and weakness
+---------------------
+This code does answers the question. I tailord the code to handle possible errors.It is a bit wordy especially the comparison part.

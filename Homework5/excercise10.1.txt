@@ -1,0 +1,7 @@
+Method
+------
+I created a dictionary with nucleotides as keys and complements as values. Then by using import sys and sys.argv I import the DNA sequence file from the comand line. Then I create a list of the DNA sequence and then use reverse function and force the reverse sequence into a list. Then compute reverse complement using get method on the compelemnt dicationary and for loop in a list. The use join function to get the string of reverse complement of the sequence.
+
+Strength and Weakness
+---------------------
+This code is simple and compact. This code cannot handle lower case sequence but it can be rectified if I added lower method in the inputseq line.

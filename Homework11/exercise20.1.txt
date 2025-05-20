@@ -1,0 +1,8 @@
+Method
+------
+Import Entrez and SeqIO from Biopython module. Then using Entrez.email I provide my email id. Using esearch I get the protein ids and then using efetch I get the id, decription and sequence of each protein id using the SeqIO.parse method. I open a file Human-BRCA-proteins.fasta in write format. Then I write the id, description and sequence using the write method.The top hit for human protein is breast cancer type 2 susceptibility protein homolog [Mus musculus] Sequence ID: NP_001074470.
+
+Strength and Weakness
+---------------------
+I ran into an error while trying to write the sequence into the file as the save_file.write takes string as an argument and not sequence. I converted the sequence into string using str function to handle that error.
+

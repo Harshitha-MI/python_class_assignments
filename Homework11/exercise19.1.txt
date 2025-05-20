@@ -1,0 +1,8 @@
+Method
+------
+I impoted DNAseq class and codon_table class from DNAseq module and codon_table1 module. 
+DNAseq class: I used __init__ to initiate the data memebers and read to open the sequence file and read the sequence. Then created methods like reverse, complement and reverse complement etc. In the codon_table class I used __init__ to initiate the data memeber and created methods required to translate the DNA sequence. Then in the main program I use the appropriate methods to find the translation start codon and the translation in all six frames
+
+Strength and weakness
+---------------------
+I ran into an error while translating the sequence in the reverse frames because the argument for the transalate method is an instance of the class and when it comes to reverse frame I have to pass a sequence as parameter. I created another method rev_translate that will take a sequence as a parameter.

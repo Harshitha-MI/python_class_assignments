@@ -1,0 +1,8 @@
+Method
+------
+I import pandas as pd and munpy as np. Then use pd.read_csv to read the tsv file by giving the seperator as tab. To find the number of genes with atleast two peptides in the sample I used min function to get the minimum value for each gene and then gave a condition that the minimum value should be greater than or equal to 2. Then use sum function to get the number of genes with minimun of 2 peptides in the sample. 
+To get the genes with atleat 2 distinct peptides in the sample I used max function and assigned the values of the samples that are greater than or equal to 2 to a variable maxexpress. Then use the sum function to get the number of genes.
+
+Strength and weakness
+---------------------
+The code does what was asked. Pandas makes it easy to go through the tsv files. Import of numpy was not needed in this code.

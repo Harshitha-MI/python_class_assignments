@@ -1,0 +1,7 @@
+Method
+------
+I import the sys and sqlit3 modules using import statement. Then I get the name of the organism form the command line.I use sqlite3.connect to access the taxa.db3 database in the sql and put that in a variable called conn. Then I create a list called params with the name as the item. Then using conn.cursor I direct the python to enter the commands in sql. Then using c.execute  give the command to look for the name provided by the user in the name table of the taxa database. Then using a for loop I get the tax id of the name by indexing. Then create another list of tax id and gave another command to look for the tax id in the taxonomy table. Then to get the records of that tax id I wrote another for loop and got the scientific name using indexing method.
+
+Strength and Weakness
+---------------------
+This is an easy way to access a relational database. But I think that using indexing is not the best way to get the desired values as I had to print the entire record and then look for the index of scientific  name and then use the indexing to get the value.

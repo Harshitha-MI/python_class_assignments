@@ -1,0 +1,16 @@
+Method
+------
+I defined a function to give reverse complement of the sequence. To import the
+sequence file from the command line I used import sys and sys.argv. To get the
+sequence from the file I used open and read. I used strip method to remove extra
+spaces and split by new line to creat an input_seq list. Then by using for loop
+I created another list (c_list) by breaking the words in the input_seq list using
+split and gave space as a delimiter. Then I used the reverse comp function on
+the firt two items of the c_list to get the reverse complement in the desired
+format.
+
+Strength & Weakness
+-------------------
+This code works for any file with sequences in the same format as the one that was
+mentioned in the example lec7 ppt. This won't work if the sequences are seperated by
+any delimiter other than space. 

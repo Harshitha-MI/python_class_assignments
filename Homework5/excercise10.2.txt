@@ -1,0 +1,7 @@
+Method
+------
+I used import sys to input the DNA sequence file from the command line. I created a dictionary with nucleotides as keys and their frequencies as values using for loop and count method. Then I used sorted function with key lambda to sort the items in the dictionary base on the value in the dictionary. Then I use reversed function to get the most occurance to least occurance and convert it into a list usinglist function. 
+
+Strength and Weakness
+---------------------
+This is a compact code that avoids writing multiple lines of code with for loops and if statments and defining a function separately. 

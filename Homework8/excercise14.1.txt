@@ -1,0 +1,8 @@
+Method
+------
+Import ElementTree module and urllib module. I create a file handle using urlopen. Then I use ET.parse to read the file and find the root element using getroot. Then create a variable ns and assign the namespace value to it. Then find entry from the root element using find method. Then using findall method I find references under the entry element. As the references variable is a list I use a for loop to get the data from the list. First I pint the key attribute of the reference and then using find method I get the citation element. using find method on c variable I get the authorslist. Since person occurs more than once in th exml file I use findall method and then find individual elements of the list by using for loop. In the same manner I get the title of the reference using find method on c. Then print all the citataion values using get method. I used for loops and if not none statements to get the scope, source and dbreference.
+
+Strength and weakness
+---------------------
+This code prints all the references in a more readable format. All the information under the reference element can be printed using this code. I had to manually check if there are any exceptions for an element. For example reference 7 does not have people element instead it has consortium. 
+

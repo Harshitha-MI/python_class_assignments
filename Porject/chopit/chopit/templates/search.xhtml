@@ -1,0 +1,27 @@
+<html py:extends="master.xhtml" py:strip="True">
+    <head py:block="head" py:strip="True">
+        <title py:block="master_title">${title}</title>
+    </head>
+    <body py:block="body" py:strip="True">
+        <P/>
+            <table class="table" style="width:100%; border-collapse: collapse; border: 1px solid black;"> 
+              <tr>
+                <th style ="text-align:center;">Peptides</th>
+                <th style ="text-align:center;">Peptide Mass </th>
+                <th style ="text-align:center;">Peptide Length</th>
+                <th style ="text-align:center;">Missed Cleavage</th>
+                <th style ="text-align:center;">Left Amino Acid</th>
+                <th style ="text-align:center;">Right Amino Acid</th>
+              </tr>
+              <tr py:for="n in peptides">
+                <td style ="text-align:center;">${n[0]}</td>
+                <td style ="text-align:center;">${n[1]}</td>
+                <td style ="text-align:center;">${n[2]}</td>
+                <td style ="text-align:center;">${n[3]}</td>
+                <td style ="text-align:center;">${n[4]if n[4]is not None else 'None' }</td>
+                <td style ="text-align:center;">${n[5]if n[5]is not None else 'None'}</td>
+              </tr>
+        
+            </table>
+    </body>
+</html>

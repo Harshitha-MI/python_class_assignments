@@ -1,0 +1,9 @@
+Method:
+-------
+To the code from the slide 19 I add an if statement to get the counts with max counts.values > 10 and then create a variable called thr for 5% of max value in the values of counts. Then I apply an if statement to get the alleles which are somewhat similar. Then to get the highest coverage I initialize max_value, position and allele. I used an if statement to get the max reads and then created lists of values(counts) and keys(readbase) corresponding to the highest coverage. Then I iterate to the list and assign the allele and it's count to a variable called allele and print the variable allele. Then I use the code from slide 20 to filter out the bad reads. for the code without bad reads filteration I got the output as Locus 47423388 reads 149 allelle G 72 allelle C 70 and after applying the filter for bad reads the output was Locus 47423388 reads 1581 G 738 A 702 C 2 T 1.
+
+Strength and Weakness:
+----------------------
+This code answers the question but I do not think this is the best way to write the code.
+
+ 

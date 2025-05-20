@@ -1,0 +1,14 @@
+Method
+------
+I access the file codon.txt using open function and create an empty dictionary
+then using for loop I create a of each line using split method. Then I assign
+keys and values using the index 0 and 2 in the list sl. Then add the keys and
+corresponding values to the dictionary and close the file. I created variables
+b1,b2,b3, aa, start and assign the corresponding key values from the dictionary data.
+Then to create a dictionary with codons as key and amino acid as the value, using for loop and range function to get the codons and init dictionary. Using import sys I import the sequence file. To get the
+amino acid sequence I use a for loop with range function to get the codons of the sequence and use the codons as the key to get the value of the corresponding key from the codons dictionary. Then using if statement I check if the sequence starts with a valid translation start codon. Then I dowloaded the correct codon table for bacteria and used that as the codon file to check if the anthrax sequence has 
+valid translation start codon.
+
+Strength and Weakness
+---------------------
+The code works for any sequence and can be used with any codon table. The problem with this code is, if the codon file is not in the format the code assumes to be the output won't be correct. To use a different codon table we should change the file name in the code.

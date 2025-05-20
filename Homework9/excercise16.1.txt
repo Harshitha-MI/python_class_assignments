@@ -1,0 +1,8 @@
+Method
+------
+I created myDNAstuff module with the functions that read the seqence file, give the reverse complement of the sequence and the GC% in the sequence. In the codon_table module has function to read the codon file and create a dictionary with the codons and amino acids as key value pairs. The function is_init checks if the initial codon in the sequence is a vaild translation start codon. The function is_init takes the codontable and sequence codon as parameters. within the function aa dictionary is created with the codon of the sequence and true or false for the conditon that the codon in the table dictionary is equal to M and the function retruns the aa dictionary. The codon_table module contains the function to transalte the sequenec to amino acid sequence. Then in the excercise 16.1.py I import the functions of the MyDNAstuff and codon_table module using from and * to import all the functions in the module. I also import sys module to get the the sequence file and the codon table file from the comand line. Then the if statement checks if the firts codon in the sequence is a valid trabsaltion start codon. Then the two for loops give the transalation in all the six frames
+
+Strength and weakness
+---------------------
+I used * to import all the function which is not recommended when working with complex modules, I did it in this code as my modules are not that complex. By creating modlues with required functions I can reuse them in other code and write a simple porgram without having to write the functions each and every time.
+
