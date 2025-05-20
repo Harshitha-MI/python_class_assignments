@@ -1,0 +1,4 @@
+I assigned a value(desired code) to a variable(code). Then picked apart the code
+so that the first nucleotide in the result is the last nucleotide of the code.
+Then I put the peices together by using an arithmatic operator(+)and lastly, to get the
+code in lower case I used the method .lower(). 

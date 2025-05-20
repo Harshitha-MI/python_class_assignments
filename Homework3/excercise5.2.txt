@@ -1,0 +1,21 @@
+Method
+------
+I used the same code to get the reverse complement of the primer sequence. To check
+if the primer is a reverse complement palindrome I used if statement. The code
+counts the chunk length of the primer which is length of primer (floor divided)// 2.
+This gives us the exact half the length of the primer. If the primer has odd number
+of charecters, as I used floor division, it gives an integer number. After getting
+the length of the chunck. I break the primer sequence to first and second parts by
+giving appropriate index in [] to get equal half, in case of even length primer. In
+case of odd length primer, I left the middle nucleotide and assigned first and second
+parts of the primer. Then I check if the first part of theprimer is the reverse
+complement plaindrome using reverse _comp function on second part.
+
+Strength & Weakness
+-------------------
+This code considers a primer is a reverse complement palindrome if the first half
+of the sequence is equal to the second half's reverse complement. But a primer can
+form a reverse complement primer with any set of nucleotides of the primer sequence
+not just half of the sequence. For example, the last three or four nucleotides of
+the primer sequence can form a reverse complement palindrome. This code does not
+work in that way.

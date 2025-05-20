@@ -1,0 +1,13 @@
+Method
+------
+To get the input from the command line, I used import sys and sys.argv.I wrote two
+sys.argv commands, so that it reads first and second inputs on the command line as
+the two input primers.
+
+Strength & Weakness
+-------------------
+This code can handle lower an upper case inputs and gives the output, reverse
+complement of primer, in upper case. The command line input makes it easier to use
+the same command by simply pressing the up arrow key.Using this method I can input
+mutltiple inputs by adding an sys.argv statement with different positions.The
+command line input does not give a prompt like the input function.

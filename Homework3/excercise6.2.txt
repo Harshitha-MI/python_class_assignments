@@ -1,0 +1,15 @@
+Method
+------
+I used import sys, sys.stdin.read and sys.argv[1] to get the input_seq file and the
+command to manipulate the sequence from the command line, respectively.To manipulate
+the input I used if statement and for loop to get complement, reverse and reverse
+complement. If the command is complement the code using the defined function gives
+the complement of the input. In cas of reverse, the code goes in loop, reads the
+nucleotide and keeps adding nucleotide before the previous one as the loop goes on.
+
+Strength & Weakness
+-------------------
+The code can handle lower and upper case inputs. When reverse complement is given on
+the command line as a command, the code for reverse is processed and reverse of
+the sequence is generated. To get the reverse complement the user has to give the
+command without any spaces between reverse and complement(reversecomplement).

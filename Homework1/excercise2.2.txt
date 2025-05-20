@@ -1,0 +1,7 @@
+I created two variables, one for the dna sequence and the other for the desired codon.
+To find the index of the codon from the dna sequence I used .find method and in the
+print statment I added 1 to the index to get the actual position of the codon.
+To find the translation frame I used the modulus operator as the frame is
+in cycles of three.This code works to find the translation frame of 1 and 2 but not
+the third frame as this code returns zero as the translation frame.
+I think I could use an If statement to correct the code but I'm not sure.

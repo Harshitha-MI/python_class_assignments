@@ -1,0 +1,17 @@
+Method
+------
+I choose TP53 gene pcr primers as input sequence from the primer bank. It showed that
+the gene has 3 sets of primers, I added them in the comment to check the working of
+the code. I defined complement function to give the complement of nucleotide in
+a sequence and then defined another function, reverse_comp, included for loop and
+called the complement function in the reverse_comp function. As the loop goes on
+each nucleotide is converted into it's complement and stored in newseq. When the
+loop runs again the complement of the next nucleotide is added before the previous
+complement. This gives the reverse complement of the primers.
+
+Strength & Weakness
+-------------------
+This code can handle upper and lower case inputs. I did not consider the case where other
+string charecters like 'N' being in the input as the inputs I choose do not have
+those. This can be rectified by adding an additional else statement in the
+complement function.

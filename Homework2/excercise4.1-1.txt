@@ -1,0 +1,11 @@
+Method
+------
+I defined a function, complement, by adding if and elif statement to convert the
+codon to its complement version. Then I assigned variables like first, second and
+third with the opposite index as values. Then I called the function complement in
+the reverse variable to get the reverse complement of the codon.
+
+Strength and Weakness
+---------------------
+This code works for codons with u, any letter, upper case and lower case values.The
+weakness of this code would be that it is too wordy.

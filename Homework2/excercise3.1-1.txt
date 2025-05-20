@@ -1,0 +1,19 @@
+Method
+------
+
+The code converts upper case values to lower case and replaces t with u, as it is
+ment to be treated as sequence to be translated. Then usinng if a statement and
+startswith mehtod I find out if the sequence has a met codon or not. The finds the
+translation frame using find method an mod operator. To find the number of nuclotides
+and the amino acids I used length function, as one amino acid consists of 3 codons
+I divided length by 3 to get the number of amino acids.To get the % of g I used count
+method to find the number of g's and calcualted the percent and did the same to find
+the % of c.
+
+Strength and Weakness
+---------------------
+The code asnwers all the questions from the excercise. The problem with the code is
+that all the variables are named after the sequences, sasp, so if I want to use this
+code on a different sequence I shoul alter the variable names accordingly. Instead
+of giving the varibale names linked to sasp I can just give a universal name like seq.
+Then it will work on any sequence.

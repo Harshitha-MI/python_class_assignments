@@ -1,0 +1,10 @@
+Method
+------
+I split apart the tandem and assging them to codon variable. Then I used count method
+to find the number of repetitions. Then I used if statement to determin if the sequence has a perfect 
+number of tandem repeats or not.
+
+Strength and weakness
+---------------------
+While this code works to find the number of tandem repeats it fails to go over a sequence and find the
+tandem repeats.
